@@ -1,4 +1,11 @@
 //creation of jenkins job
+terraform {
+  required_providers {
+    jenkins = {
+      source = "registry.terraform.io/taiidani/jenkins"
+    }
+  }
+}
 
 resource "jenkins_folder" "folders" {
   name = "infra"
