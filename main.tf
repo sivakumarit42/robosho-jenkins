@@ -1,4 +1,4 @@
-//creation of jenkins job
+//creation of jenkins jobs
 resource "jenkins_folder" "folders" {
   count = length(var.folders)
   name  = element(var.folders, count.index)
