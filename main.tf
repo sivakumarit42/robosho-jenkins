@@ -19,6 +19,7 @@ resource "jenkins_job" "job" {
     ignore_changes = [template]
   }
 }
+
 data "aws_instance" "jenkins" {
   instance_id = "i-0f4190856737ed64d"
 }
